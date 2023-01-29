@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Signup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #logo{
+            color: #4267b2;
+            font-weight: 700;
+            font-size: 50px;
+        }
+        #div1{
+            background-color: white;
+            height: 500px;
+            width:400px;
+            border-radius: 7px;
+            
+        }
+        body,input,button, label, select, td, textarea{
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 12px;
+        }
+        body{
+            background-color: rgb(214, 214, 201);
+            line-height: 0.7;
+            
+        }
+        #inp,#num,#a{
+            height: 25px;
+            border-radius: 5px;
+            border-color: rgba(109, 105, 105, 0.199);
+        }
+        #num{
+            width: 285px;
+        }
+        #a{
+            width: 90px;
+        }
+        label{
+            color: rgb(5, 5, 5);
+        }
+        #td1{
+            border: rgba(0, 0, 0, 0.589) solid 1px;
+            border-radius: 5px;
+            text-align: center;
+            
+            height: 30px;
+            
+          
+        }
+        #lab{
+            font-size: 11px;
+            line-height: 1;
+        }
+        a{
+            color: blue;
+        }
+        button{
+            background-color: rgb(8, 156, 8); 
+            color: white;
+            border-radius: 8px;
+            height: 40px;
+            width: 200px;
+            font-size: 20px;
+            border-color: white;
+            box-shadow: 3px 3px 3px white;
+        }
+        button:hover{
+            color: rgb(216, 216, 197);
+            
+        }
+        img{
+            height: 15px;
+            width: 15px;
+        }
+        #id2{
+            position: relative;
+            bottom: 3px;
+        }
+        input:checked{
+            accent-color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <center>
+        <h1 id="logo">facebook</h1>
+        <div  id="div1">
+            <br>
+            <h1><b>Create a new account</b></h1>
+            <p>it's quick and easy</p>
+            <hr>
+            <form action="" id="form1">
+                <table cellspacing="10px">
+                    <tr><td><input type="text" id="inp" placeholder="First name"></td><td><input type="text" id="inp" placeholder="Surname"></td></tr>
+                    <tr><td colspan="2"><input id="num" type="text" placeholder="Mobile number or email address"></td></tr>
+                    <tr><td colspan="2"><input id="num" type="password" placeholder="New password"></td></tr>
+                    <table cellspacing="10px">
+                        <tr><td><label >Date of birth </label></td></tr>
+                        <tr><td><select name="" id="a"><option value="">1</option></select></td><td><select name="" id="a"><option value="jan">Jan</option></select></td><td><select name="" id="a"><option value="">1999</option></select></td></tr>
+                        <tr><td><label for="">Gender </label></td></tr>
+                        <tr><td id="td1"><label id="id2">Female</label><input type="radio" name="dia"></td><td id="td1"><label id="id2">Male</label><input type="radio" name="dia"></td><td id="td1"><label for="" id="id2">Custom</label><input type="radio" name="dia"></td></tr>
+                       
+                    </table>
+                    <tr><td colspan="2" rowspan="3"><label for="" id="lab">
+                
+                        &nbsp;&nbsp; &nbsp; People who use our service may have uploaded your contact information to <br>  Facebook. <a>Learn more</a>.
+                        <br>
+                        <br>
+                        &nbsp; &nbsp; &nbsp; By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies <br>&nbsp; &nbsp; &nbsp; Policy. You may receive SMS notifications from us and can opt out at any time.
+                    </label></td></tr>
+
+                </table>
+                <br><br>
+                <button id="id3">Signup</button>
+                
+            </form>
+
+        </div>
+    </center>
+    
+</body>
+</html>

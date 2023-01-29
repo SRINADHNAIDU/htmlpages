@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>event handlers 1</title>
+    <style>
+        #a{
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        function onmouseover1() {
+            document.getElementById('head1').innerHTML='hello '
+        }
+        function onmouseout1() {
+            document.getElementById('head1').innerHTML=''
+        }
+        function onmousedown1() {
+            document.getElementById('head1').innerHTML="onmousedown"
+        }
+        function onmouseup1() {
+            document.getElementById('head1').innerHTML=''
+        }
+    </script>
+    <img src="./koenigsegg.jpg" alt="" onmouseover="onmouseover1()" onmouseout="onmouseout1()"><h1 id="head1"></h1>
+    <img src="./WIN_20220112_19_10_38_Pro.jpg" alt="" onmousedown="onmousedown1()" id="a" onmouseup="onmouseup1()">
+</body>
+</html>

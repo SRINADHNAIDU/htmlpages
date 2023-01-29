@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>event handelers 2</title>
+</head>
+<body onload="onload1()">
+    <script>
+        function oninput1() {
+           var x= document.getElementById('A').value
+           document.getElementById('B').innerHTML=x
+        }
+        function onkeydown1() {
+            
+            var x=document.getElementById('C').value
+            document.getElementById('B').innerHTML="typing"
+        }
+        function onkeyup1() {
+            var x=document.getElementById('C').value
+            document.getElementById('B').innerHTML=""
+        }
+        function onload1() {
+            document.getElementById("B").innerHTML="loaded successfully"
+        }
+        function onchange1() {
+            var x=document.getElementById('D').value
+            document.getElementById('B').innerHTML="from options "+x
+        }
+    </script>
+    <input type="text" id="A" oninput="oninput1()">
+    <h1 id="B"></h1>
+    <input type="text" id="C" onkeydown="onkeydown1()" onkeyup="onkeyup1()">
+    <select id="D" onchange="onchange1()">
+        <option >hyd</option>
+        <option >rjy</option>
+        <option >vjy</option>
+    </select>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        #caldiv{
+            height: 400px;
+            width: 300px;
+            background-color: rgba(0, 0, 0, 0.61);
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+        #but, #but1{
+            height: 40px;
+            width: 50px;
+            background-color: rgb(53, 199, 236);
+            border-radius: 5px;
+
+        }
+        #but1{
+            background-color: rgba(16, 187, 230, 0.829);
+        }
+        #but1:hover{
+            background-color: rgba(53, 199, 236, 0.603);
+            color: white;
+        }
+        #but:hover{
+            opacity: 0.9;
+            color: white;
+        }
+        #inp{
+            height: 60px;
+            width: 250px;
+            border-radius: 5px;
+        }
+        #ex{
+            height: 75px;
+            width: 50px;
+            background-color: rgb(255, 0, 0);
+            border-radius: 5px;
+
+        }
+        #ex:hover{
+            background-color: rgba(255, 0, 0, 0.884);
+            color: white;
+        }
+        h4{
+            color: beige;
+            margin-left: 200px;
+            position: relative;
+            top: 20px;
+        }
+        body{
+            //background-color: rgb(114, 114, 70);
+        }
+    </style>
+</head>
+<body>
+    
+    <center>
+        <div id="caldiv">
+            <form action="" id="calform">
+                <h4>Casio</h4>
+                <input type="text" id="inp">
+                <br><br><br>
+                <table  >
+                    <tr ><td><input type="button" id="but" value="Ac" onclick="calform.inp.value=''"></td><td><input type="button"   id="but" value="C"  onclick="calform.inp.value=fun()"></td><td><input type="button" id="but" value="(" onclick="calform.inp.value+='('"></td><td><input type="button" id="but" value=")" onclick="calform.inp.value+=')'"></td><td><input type="button" id="but" value="π" onclick="calform.inp.value+='*3.14'"></td></tr>
+                    <tr><td><input type="button"  id="but1" value="7" onclick="calform.inp.value+='7'"></td><td><input type="button" id="but1" value="8" onclick="calform.inp.value+='8'"></td><td><input type="button" id="but1" value="9" onclick="calform.inp.value+='9'"></td><td><input type="button" id="but" value="/" onclick="calform.inp.value+='/'"></td><td><input type="button" id="but" value="√" onclick="calform.inp.value=root()"></td></tr>
+                    <tr><td><input type="button"  id="but1" value="4" onclick="calform.inp.value+='4'"></td><td><input type="button" id="but1" value="5" onclick="calform.inp.value+='5'"></td><td><input type="button" id="but1" value="6" onclick="calform.inp.value+='6'"></td><td><input type="button" id="but" value="*" onclick="calform.inp.value+='*'"></td><td><input type="button" id="but" value="x^x" onclick="calform.inp.value+='**'"></td></tr>
+                    <tr><td><input type="button"  id="but1" value="1" onclick="calform.inp.value+='1'"></td><td><input type="button" id="but1" value="2" onclick="calform.inp.value+='2'"></td><td><input type="button" id="but1" value="3" onclick="calform.inp.value+='3'"></td><td><input type="button" id="but" value="-" onclick="calform.inp.value+='-'"></td><td rowspan="2"><input type="button" id="ex" value="=" onclick="calform.inp.value=eval(calform.inp.value)"></td></tr>
+                    <tr><td><input type="button"  id="but1" value="0" onclick="calform.inp.value+='0'"></td><td><input type="button" id="but" value="." onclick="calform.inp.value+='.'" ></td><td><input type="button" id="but" value="%" onclick="calform.inp.value+='%'"></td><td><input type="button" id="but" value="+" onclick="calform.inp.value+='+'"></td></tr>
+                
+                </table>
+            </form>
+        </div>
+    </center>
+    <script>
+        function fun() {
+            var x=calform.inp.value
+            let s=x.substring(0,x.length-1)
+            return s
+        }
+        function root() {
+            var x=calform.inp.value
+            let f=Math.sqrt(x)
+            return f
+        }
+    </script>
+</body>
+</html>
