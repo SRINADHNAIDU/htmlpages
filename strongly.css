@@ -1,0 +1,112 @@
+*{
+    margin: 0%;
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+}
+
+#nav_bar{
+    background-color: rgba(55, 61, 73, 0.975);
+    height: 60px;
+    width: 100%;
+    position:sticky;
+}
+#nav_h1{
+    color: white;
+    padding: 20px;
+    font-size: large;
+    
+}
+#nav_opt{
+    height: 40px;
+    width: 337px;
+    border:1px solid #dee0e3;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    left: 200px;
+}
+.nav_td{
+    color: white;
+    text-align: center;
+    font-weight: 200;
+}
+.nav_td:hover{
+    background-color:  #676d79;
+    border-radius: 5px;
+}
+#nav_arrow{
+     padding: 12px;
+    /* font-size: 25px; */
+    position: absolute;
+    left: 550px;
+    top: 10px;
+    color: white;
+    border: solid #dee0e3 1px;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+#nav_back:hover,#nav_arrow:hover{
+    color: rgba(255, 0, 0, 0.781);
+    border-color: rgba(255, 0, 0, 0.747);
+    transition-duration: 5s;
+}
+#nav_download{
+    height: 40px;
+    width: 150px;
+    color: white;
+    background-color: #e7746f;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    border-radius: 5px;
+    
+}
+#nav_p{
+    color: wheat;
+}
+#nav_back{
+    height: 40px;
+    width: 80px;
+    position: absolute;
+    right: 160px;
+    background-color: rgba(55, 61, 73, 0.975);
+    top: 10px;
+    border-radius: 5px;
+    color: white;
+    border: solid 1px #676d79;
+    font-weight: bold;
+}
+#nav_social{
+    text-align: center;
+    border: 1px solid #676d79;
+    border-radius: 5px;
+    height: 40px;
+    width: 150px;
+    position: absolute;
+    right: 250px;
+    top: 10px;
+}
+#nav_like{
+    
+    color: white;
+    background-color: #3b5998 ;
+    border-radius: 5px;
+    position: absolute;
+    right: 90px;
+    top: 10px;
+    text-align: center;
+    padding: 5px;
+}
+#nav_twitter{
+    width: 80px;
+    height: 20px;
+    color: white;
+    background-color: #1DA1F2;
+    border-radius: 5px;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    font-size: 10px;
+    text-align: center;
+    text-transform: lowercase;
+}
