@@ -4,7 +4,9 @@
     
 }
 img:hover{
+    transition-duration:1s ;
     opacity: 0.8;
+    
 }
 
 #nav_bar{
@@ -228,6 +230,18 @@ img:hover{
     font-weight: 100;
     line-height: 50px;
 }
+#bd_bigdiv_left_p1:hover{
+    color: #e7746f;
+}
+.bd_bigdiv_left_h1:hover{
+    color: #e7746f;
+}
+.bd_bigdiv_left_butreading:hover{
+    opacity: 0.9;
+}
+#bd_bigdiv_left_h2:hover{
+    color: #e7746f;
+}
 .bd_bigdiv_left_img{
     margin-top: 60px;
     border: 7px solid #dee0e3;
@@ -285,6 +299,15 @@ img:hover{
     color: #7c7d7e;
     line-height: 30px;
 
+}
+.bd_bigdiv_right_butdate:hover{
+    opacity: 0.9;
+}
+.bd_bigdiv_right_h3:hover{
+    color: #e7746f;
+}
+.bd_bigdiv_right_butlern:hover{
+    opacity: 0.9;
 }
 .bd_bigdiv_right_img{
     border: #dee0e3 solid 7px;
