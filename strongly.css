@@ -199,7 +199,9 @@ img:hover{
     
     width: 100%;
     height: 400px;
-    background-color: #676d79;
+    background-image: url(./st_project/pc8.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #bd_bg_cap{
     margin-top: 10px;
