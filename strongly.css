@@ -55,7 +55,7 @@ img:hover{
 }
 #nav_back:hover,#nav_arrow:hover{
     color: rgba(255, 0, 0, 0.781);
-    border-color: rgba(255, 0, 0, 0.747);
+    border-color: rgba(255, 0, 0, 0.748);
     transition-duration: 2s;
 }
 #nav_download{
