@@ -1,12 +1,26 @@
+:root{
+    --white:#ffffff;
+    --black:#000000 ;
+}
 *{
     margin: 0%;
     font-family: 'Source Sans Pro', Arial, sans-serif;
-    
+    background-color: var(--bg);
+    color: var(--fontColor);
 }
 img:hover{
     transition-duration:1s ;
     opacity: 0.8;
     
+}
+.dark-theme{
+    --bg:var(--black);
+    --fontColor:var(--white);
+
+}
+.light-theme{
+    --bg:var(--white);
+    --fontColor:var(--black);
 }
 
 #nav_bar{
@@ -15,6 +29,7 @@ img:hover{
     width: 100%;
     position:sticky;
     top: 0px;
+    color: #ffffff;
 
 }
 #nav_h1{
@@ -57,6 +72,13 @@ img:hover{
     color: rgba(255, 0, 0, 0.781);
     border-color: rgba(255, 0, 0, 0.748);
     transition-duration: 2s;
+}
+.mode_btn{
+    position: absolute;
+    font-size: 30px;
+    top: 15px;
+    left: 620px;
+    border: none;
 }
 #nav_download{
     height: 40px;
